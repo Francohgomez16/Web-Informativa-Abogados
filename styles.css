@@ -1,0 +1,107 @@
+/* ===== RESET Y VARIABLES ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+:root {
+  --azul: #0f2340;
+  --beige: #faf6ef;
+  --dorado: #b8975a;
+  --oscuro: #1b2430;
+}
+body {
+  font-family: "Lato", sans-serif;
+  background: var(--beige);
+  color: var(--azul);
+  line-height: 1.6;
+}
+h1, h2, h3 { font-family: "Cormorant Garamond", serif; }
+
+/* ===== PORTADA ===== */
+.portada {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 24px;
+  color: white;
+  background:
+    linear-gradient(rgba(15,35,64,.65), rgba(15,35,64,.9)),
+    var(--azul);              /* reemplazá por url("img/portada.jpg") */
+  background-size: cover;
+  background-position: center;
+}
+.portada h1 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  color: var(--dorado);
+}
+.subtitulo { font-size: 1.6rem; margin: 20px 0; font-family: "Cormorant Garamond", serif; }
+
+/* ===== DIVISOR ===== */
+.divisor { width: 120px; height: 1px; background: var(--dorado); margin: 20px auto; position: relative; }
+.divisor::after {
+  content: ""; position: absolute; left: 50%; top: 50%;
+  width: 10px; height: 10px; border: 1px solid var(--dorado);
+  background: var(--azul); transform: translate(-50%,-50%) rotate(45deg);
+}
+
+/* ===== BOTÓN ===== */
+.boton {
+  display: inline-block;
+  padding: 14px 32px;
+  background: var(--beige);
+  color: var(--azul);
+  text-decoration: none;
+  letter-spacing: 3px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background .3s;
+}
+.boton:hover { background: var(--dorado); color: white; }
+
+/* ===== SECCIONES ===== */
+.seccion { padding: 60px 24px; }
+.contenedor { max-width: 800px; margin: 0 auto; }
+.oscura { background: var(--oscuro); color: white; }
+.oscura h2 { color: var(--dorado); }
+h2 { font-size: 2rem; margin-bottom: 16px; }
+
+/* ===== TARJETAS ===== */
+.servicios {
+  max-width: 1100px; margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+.tarjeta {
+  padding: 32px;
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.15);
+  transition: transform .3s;
+}
+.tarjeta:hover { transform: translateY(-6px); }
+.tarjeta h3 { text-transform: uppercase; margin-bottom: 12px; }
+.tarjeta.azul { background: var(--azul); color: white; }
+.tarjeta.beige { background: white; color: var(--azul); }
+
+/* ===== FORMULARIO ===== */
+form { display: grid; gap: 12px; }
+input, textarea { padding: 14px; border: 1px solid var(--dorado); font-family: inherit; font-size: 1rem; }
+footer { text-align: center; padding: 24px; background: var(--oscuro); color: white; }
+
+/* ===== WHATSAPP FLOTANTE ===== */
+.whatsapp {
+  position: fixed; right: 20px; bottom: 20px;
+  width: 56px; height: 56px; border-radius: 50%;
+  background: #25d366; color: white; text-decoration: none; font-weight: 700;
+  display: flex; justify-content: center; align-items: center;
+  z-index: 999;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (min-width: 768px) {
+  .portada h1 { font-size: 3.5rem; }
+}

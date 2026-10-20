@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TITULO de PAGINA (aparece en la pestaña del navegador)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== PORTADA ===== -->
+  <header class="portada">
+    <h1>Titulo de Portada</h1>
+    <p class="subtitulo">Profesion y Area</p>
+    <div class="divisor"></div>
+    <a href="#contacto" class="boton">CONTACTAR</a>
+  </header>
+
+  <main>
+    <!-- ===== SERVICIOS ===== -->
+    <section class="seccion" id="servicios">
+      <div class="servicios">
+        <article class="tarjeta azul">
+          <h3>Servicio o Area  o Especializacion 1</h3>
+          <p>Descripcion del servicio o area o especializacion 1</p>
+        </article>
+        <article class="tarjeta beige">
+          <h3>Servicio o Area  o Especializacion 2</h3>
+          <p>Descripcion del servicio o area o especializacion 2</p>
+        </article>
+        <article class="tarjeta azul">
+          <h3>Servicio o Area  o Especializacion 3</h3>
+          <p>Descripcion del servicio o area o especializacion 3</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE MÍ ===== -->
+    <section class="seccion oscura" id="sobre-mi">
+      <div class="contenedor">
+        <h2>Acerca de mí</h2>
+        <p>Descripcion del profesional, experiencia, especialidad y/o logros.</p>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section class="seccion" id="contacto">
+      <div class="contenedor">
+        <h2>Agendar una consulta</h2>
+        <form action="https://formspree.io/f/TU_CODIGO" method="POST">
+          <input type="text" name="nombre" placeholder="Nombre" required>
+          <input type="email" name="correo" placeholder="Correo" required>
+          <textarea name="mensaje" rows="4" placeholder="Mensaje"></textarea>
+          <button type="submit" class="boton">Contactar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>© 2026 Tu Nombre</p></footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/5491112345678" class="whatsapp">WA</a>
+
+</body>
+</html>
