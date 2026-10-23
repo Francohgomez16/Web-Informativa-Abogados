@@ -26,7 +26,7 @@ h1, h2, h3 { font-family: "Cormorant Garamond", serif; }
   padding: 24px;
   color: white;
   background:
-    linear-gradient(rgba(15,35,64,.65), rgba(15,35,64,.9)),
+    linear-gradient(rgba(5,37,58,.65), rgba(5,37,58,.9)),
     var(--azul);              /* reemplazá por url("img/portada.jpg") */
   background-size: cover;
   background-position: center;
